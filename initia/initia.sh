@@ -93,6 +93,7 @@ curl -L https://snapshots.polkachu.com/testnet-snapshots/initia/initia_237655.ta
 sudo systemctl enable initiad
 sudo systemctl daemon-reload
 sudo systemctl restart initiad
+echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc && source ~/.bashrc
 
 echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.bashrc && source ~/.bashrc
 
